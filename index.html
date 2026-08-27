@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fbfaf7">
+<title>Nuestra historia de amor 💘</title>
+<style>
+:root{--gold:#b89552;--gold2:#d8bd7c;--ink:#292724;--cream:#fbfaf7;--white:#fff;--muted:#756f65}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.65}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:radial-gradient(circle at 20% 20%,#d8bd7c 0 1px,transparent 1.5px),radial-gradient(circle at 80% 70%,#d8bd7c 0 1px,transparent 1.5px);background-size:55px 55px,75px 75px}
+.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:28px 18px;position:relative}
+.hero-inner{max-width:900px}
+.kicker{letter-spacing:.25em;text-transform:uppercase;color:var(--gold);font-size:.72rem}
+h1{font-size:clamp(2.5rem,9vw,6.2rem);font-weight:400;line-height:1.02;margin:18px 0 12px}
+.subtitle{font-size:1.15rem;color:var(--muted)}
+.hero-photo{width:min(92vw,760px);aspect-ratio:16/10;object-fit:cover;border-radius:22px;margin:28px auto 22px;display:block;box-shadow:0 22px 70px #0002;border:1px solid #d8bd7c88}
+.btn{display:inline-block;padding:12px 24px;border:1px solid var(--gold);border-radius:999px;color:var(--ink);text-decoration:none;background:#fff8;backdrop-filter:blur(6px)}
+section{max-width:1050px;margin:auto;padding:82px 18px}
+.section-title{text-align:center;font-size:2.1rem;font-weight:400;margin:0 0 10px}
+.section-lead{text-align:center;color:var(--muted);max-width:650px;margin:0 auto 38px}
+.counter{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:780px;margin:30px auto 0}
+.unit{background:#fff;border:1px solid #d8bd7c55;border-radius:16px;padding:18px 8px;text-align:center;box-shadow:0 8px 30px #0000000b}
+.num{font-size:clamp(1.55rem,5vw,2.8rem);color:var(--gold);font-weight:400}
+.label{font:600 .68rem/1.2 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.card{background:#fff;border:1px solid #d8bd7c55;border-radius:24px;padding:32px;box-shadow:0 12px 40px #0000000b}
+.letter{max-width:760px;margin:auto;font-size:1.12rem}
+.signature{text-align:right;color:var(--gold);font-style:italic;font-size:1.25rem;margin-top:30px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.gallery figure{margin:0;background:#fff;border:1px solid #d8bd7c55;border-radius:20px;overflow:hidden;box-shadow:0 10px 35px #0000000b}
+.gallery img{display:block;width:100%;height:340px;object-fit:cover}
+.gallery figcaption{padding:14px 16px;color:var(--muted);font-size:.95rem}
+.timeline{max-width:720px;margin:auto;position:relative}
+.timeline:before{content:"";position:absolute;left:15px;top:0;bottom:0;width:1px;background:#d8bd7c}
+.event{position:relative;padding:0 0 30px 48px}
+.dot{position:absolute;left:8px;top:5px;width:15px;height:15px;border-radius:50%;background:var(--cream);border:2px solid var(--gold)}
+.date{font:600 .72rem Arial,sans-serif;letter-spacing:.12em;color:var(--gold);text-transform:uppercase}
+.event h3{margin:4px 0;font-size:1.2rem;font-weight:400}
+.event p{margin:0;color:var(--muted)}
+footer{text-align:center;padding:60px 18px 80px;color:var(--muted)}
+.heart{color:#b89552;font-size:1.7rem}
+@media(max-width:650px){.counter{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr}.gallery img{height:390px}section{padding:62px 16px}.card{padding:25px 20px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">Una historia que seguimos escribiendo</div>
+    <h1>Nuestra historia<br>de amor 💘</h1>
+    <p class="subtitle">Surely &amp; Alejandro · Bubu &amp; Dudu</p>
+    <img class="hero-photo" src="foto1.jpg" alt="Surely y Alejandro">
+    <a class="btn" href="#contador">Ver nuestro tiempo juntos ↓</a>
+  </div>
+</header>
+
+<section id="contador">
+  <h2 class="section-title">Nuestro tiempo juntos</h2>
+  <p class="section-lead">Desde el 23 de julio de 2023, cada segundo forma parte de nuestra historia.</p>
+  <div class="counter">
+    <div class="unit"><div class="num" id="years">0</div><div class="label">Años</div></div>
+    <div class="unit"><div class="num" id="months">0</div><div class="label">Meses</div></div>
+    <div class="unit"><div class="num" id="days">0</div><div class="label">Días</div></div>
+    <div class="unit"><div class="num" id="hours">0</div><div class="label">Horas</div></div>
+    <div class="unit"><div class="num" id="minutes">0</div><div class="label">Minutos</div></div>
+    <div class="unit"><div class="num" id="seconds">0</div><div class="label">Segundos</div></div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Para ti, Dudu ❤️</h2>
+  <div class="card letter">
+    <p>Te amo mucho, amor de mi vida. 💕</p>
+    <p>Feliz aniversario. Gracias por cada momento, por cada sonrisa, por cada abrazo y por todos esos recuerdos que hemos ido construyendo juntos.</p>
+    <p>Deseo que vengan muchos aniversarios más a tu lado, muchas aventuras, muchos sueños cumplidos y muchísimos momentos que todavía nos quedan por vivir.</p>
+    <p>Esta página guarda algunas fotos, pero lo más bonito de nuestra historia no cabe en ninguna fotografía: todo lo que sentimos y todo lo que hemos vivido juntos.</p>
+    <p class="signature">Con todo mi amor,<br>Bubu 💘</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Nuestros recuerdos</h2>
+  <p class="section-lead">Pequeños instantes que se convierten en grandes recuerdos.</p>
+  <div class="gallery">
+    <figure><img src="foto2.jpg" alt="Recuerdo de Surely y Alejandro"><figcaption>Juntos, disfrutando de un momento especial.</figcaption></figure>
+    <figure><img src="foto3.jpg" alt="Recuerdo de Surely y Alejandro"><figcaption>Una sonrisa que dice más que mil palabras.</figcaption></figure>
+    <figure><img src="foto4.jpg" alt="Recuerdo de Surely y Alejandro"><figcaption>Porque cada aventura contigo es un recuerdo para guardar.</figcaption></figure>
+    <figure><img src="foto1.jpg" alt="Recuerdo de Surely y Alejandro"><figcaption>Nosotros, siempre nosotros. ❤️</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Nuestra pequeña línea del tiempo</h2>
+  <div class="timeline">
+    <div class="event"><span class="dot"></span><div class="date">23 · 07 · 2023</div><h3>El comienzo</h3><p>El día que comenzó nuestra historia de amor.</p></div>
+    <div class="event"><span class="dot"></span><div class="date">Hoy</div><h3>Seguimos escribiendo</h3><p>Cada día añadimos una nueva página a nuestra historia.</p></div>
+    <div class="event"><span class="dot"></span><div class="date">Nuestro futuro</div><h3>Lo que todavía nos queda por vivir</h3><p>Muchos más aniversarios, viajes, risas, abrazos y sueños compartidos.</p></div>
+  </div>
+</section>
+
+<footer>
+  <div class="heart">♡</div>
+  <p>Te amo mucho, Dudu.</p>
+  <p>Que vengan muchos más a tu lado. 🥰</p>
+  <small>Hecho con amor por Bubu · 23/07/2023</small>
+</footer>
+
+<script>
+const start = new Date(2023, 6, 23, 0, 0, 0);
+function diffCalendar(from, to){
+  let y = to.getFullYear()-from.getFullYear();
+  let m = to.getMonth()-from.getMonth();
+  let d = to.getDate()-from.getDate();
+  if(d<0){
+    m--;
+    const prevMonthDays = new Date(to.getFullYear(), to.getMonth(), 0).getDate();
+    d += prevMonthDays;
+  }
+  if(m<0){ y--; m+=12; }
+  const anchor = new Date(from);
+  anchor.setFullYear(from.getFullYear()+y);
+  anchor.setMonth(from.getMonth()+m);
+  anchor.setDate(from.getDate()+d);
+  let remaining = Math.max(0, to-anchor);
+  const hours = Math.floor(remaining/3600000); remaining%=3600000;
+  const minutes = Math.floor(remaining/60000); remaining%=60000;
+  const seconds = Math.floor(remaining/1000);
+  return {y,m,d,h:hours,min:minutes,s:seconds};
+}
+function update(){
+  const x=diffCalendar(start,new Date());
+  document.getElementById('years').textContent=x.y;
+  document.getElementById('months').textContent=x.m;
+  document.getElementById('days').textContent=x.d;
+  document.getElementById('hours').textContent=String(x.h).padStart(2,'0');
+  document.getElementById('minutes').textContent=String(x.min).padStart(2,'0');
+  document.getElementById('seconds').textContent=String(x.s).padStart(2,'0');
+}
+update(); setInterval(update,1000);
+</script>
+</body>
+</html>
